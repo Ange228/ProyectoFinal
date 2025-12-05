@@ -25,8 +25,8 @@ class QuoteProvider {
         ),
 
         QuoteModel (
-            quote = "Empieza ahora",
-            message = "Una herramienta hecha para emprendedores como tú: Crecimiento real, procesos simples y control total."
+            quote = "Una herramienta hecha para emprendedores como tú",
+            message = "Crecimiento real, procesos simples y control total."
         ),
     )
 
