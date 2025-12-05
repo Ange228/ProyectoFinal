@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:id="@+id/viewContainer"
     android:background="@color/background"
-    tools:context=".view.MainActivity">
+    tools:context=".ui._.view.MainActivity">
 
 
     <ImageView

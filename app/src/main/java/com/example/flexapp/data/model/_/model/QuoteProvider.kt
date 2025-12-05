@@ -1,10 +1,9 @@
-package com.example.flexapp.model
-import com.example.flexapp.model.QuoteModel
+package com.example.flexapp.data.model._.model
 
 class QuoteProvider {
     companion object {
 
-        fun random(): QuoteModel{
+        fun random(): QuoteModel {
             val position = (0..3).random()
             return quote[position]
         }
@@ -14,17 +13,17 @@ class QuoteProvider {
             message = "Organiza pedidos diarios y mantén todo bajo control, sin complicaciones."
         ),
 
-        QuoteModel (
+        QuoteModel(
             quote = "Tu negocio, siempre en movimiento",
-            message ="Haz que cada envío llegue a tiempo, con confianza y claridad.."
+            message = "Haz que cada envío llegue a tiempo, con confianza y claridad.."
         ),
 
-        QuoteModel (
+        QuoteModel(
             quote = "Optimiza tu operación de entregas",
             message = "Planifica, registra y da seguimiento a cada pedido sin perder detalles."
         ),
 
-        QuoteModel (
+        QuoteModel(
             quote = "Una herramienta hecha para emprendedores como tú",
             message = "Crecimiento real, procesos simples y control total."
         ),

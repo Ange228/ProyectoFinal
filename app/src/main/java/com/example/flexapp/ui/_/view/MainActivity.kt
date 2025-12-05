@@ -1,11 +1,11 @@
-package com.example.flexapp.view
+package com.example.flexapp.ui._.view
 
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import com.example.flexapp.databinding.ActivityMainBinding
-import com.example.flexapp.viewmodel.QuoteViewModel
+import com.example.flexapp.ui._.viewmodel.QuoteViewModel
 
 
 class MainActivity : AppCompatActivity() {
