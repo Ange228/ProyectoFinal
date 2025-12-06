@@ -4,7 +4,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitHelper {
-    fun getRettrofit(): Retrofit{
+    fun getRetrofit(): Retrofit{
         return Retrofit.Builder()
             .baseUrl("https://flexapp-and-default-rtdb.firebaseio.com/")
             .addConverterFactory(GsonConverterFactory.create())

@@ -7,7 +7,7 @@ import kotlinx.coroutines.withContext
 
 class QuoteService {
 
-    private val retrofit = RetrofitHelper.getRettrofit()
+    private val retrofit = RetrofitHelper.getRetrofit()
 
     suspend fun getQuotes(): List<QuoteModel>{
         return withContext(Dispatchers.IO){
