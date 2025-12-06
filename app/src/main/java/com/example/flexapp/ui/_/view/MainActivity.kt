@@ -16,17 +16,19 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-
-
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        quoteViewModel.onCreate()
 
         quoteViewModel.quoteModel.observe(this, Observer{ currentQuote ->
             binding.tvQuote.text = currentQuote.quote
             binding.tvMessage.text = currentQuote.message
         })
 
-        binding.viewContainer.setOnClickListener { quoteViewModel.randomQuote() }
+        //binding.viewContainer.setOnClickListener { quoteViewModel.randomQuote() }
     }
 }
+
+
+
