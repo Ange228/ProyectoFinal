@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Campo: Nombre del cliente -->
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="name"
+        android:hint="Nombre del cliente"
+        android:inputType="textPersonName"
+        tools:ignore="HardcodedText" />
+
+    <!-- Campo: Número de teléfono (ID antiguo: etOwner) -->
+    <EditText
+        android:id="@+id/etOwner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:autofillHints="phone"
+        android:hint="Número de teléfono"
+        android:inputType="phone"
+        tools:ignore="HardcodedText" />
+
+    <!-- Campo: Cantidad de unidades (ID antiguo: etType) -->
+    <EditText
+        android:id="@+id/etType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:autofillHints="no"
+        android:hint="Cantidad de unidades"
+        android:inputType="number"
+        tools:ignore="HardcodedText" />
+
+    <!-- Campo: Nombre del producto (ID antiguo: etPhone) -->
+    <!-- Se añade ignore para TextFields para que no se queje de que el ID parece telefono -->
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:autofillHints="no"
+        android:hint="Nombre del producto"
+        android:inputType="text"
+        tools:ignore="HardcodedText,TextFields" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Registrar envío"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

@@ -27,9 +27,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupObservers() {
-        // Observa el quote actual (texto principal y secundario)
+
         quoteViewModel.quoteModel.observe(this) { quote ->
-            // Asegurarse de que quote no sea nulo antes de setear
+
             binding.tvQuote.text = quote?.quote ?: ""
             binding.tvMessage.text = quote?.message ?: ""
         }
@@ -42,29 +42,25 @@ class MainActivity : AppCompatActivity() {
             binding.viewContainer.isEnabled = !loading
         }
 
-        // Observa si hay que mostrar el botón "Empezar" (solo en el último)
         quoteViewModel.showStartButton.observe(this) { show ->
             binding.btnEmpezar.visibility = if (show) View.VISIBLE else View.GONE
         }
     }
 
     private fun setupUiListeners() {
-        // Avanzar mensaje cuando el usuario haga click en la pantalla (root)
-        // Si estás en el último mensaje, el ViewModel no avanzará más (ni ocultará nada)
+
         binding.viewContainer.setOnClickListener {
-            // Si el botón "Empezar" ya está visible, no avanzamos más
             if (binding.btnEmpezar.visibility == View.VISIBLE) return@setOnClickListener
 
-            // Llamamos al ViewModel para avanzar al siguiente quote
             quoteViewModel.nextQuote()
         }
 
-        // Botón Empezar: por ahora lo dejamos comentado hasta que tengas LoginActivity
         binding.btnEmpezar.setOnClickListener {
-            // Navegación al LoginActivity (descomenta cuando exista)
-            // val intent = Intent(this, LoginActivity::class.java)
-            // startActivity(intent)
-            // finish()
+
+            val intent = Intent(this, RegisterBusinessActivity::class.java)
+            startActivity(intent)
         }
+
     }
 }
+

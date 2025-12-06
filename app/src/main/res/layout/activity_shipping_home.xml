@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:text="Gestión de Envíos"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- BOTÓN PROGRAMAR ENVÍO -->
+    <Button
+        android:id="@+id/btnProgramarEnvio"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:text="Programar envío"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:background="@drawable/block_home"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp" />
+
+    <!-- BOTÓN VER HISTORIAL -->
+    <Button
+        android:id="@+id/btnVerHistorial"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:text="Ver historial"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:background="@drawable/block_home"
+        android:textStyle="bold" />
+
+</LinearLayout>
